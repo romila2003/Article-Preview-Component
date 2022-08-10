@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--light-grayish-blue);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: auto;
+    position: relative;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+    padding: 1.7em 2.5em;
+}
+
+.title {
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+    font-size: 1rem;
+    padding-bottom: 0.5em;
+    line-height: 25px;
+    width: 90%;
+}
+
+.desc {
+    color: var(--desaturated-dark-blue);
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 20px;
+    padding-bottom: 2em;
+    width: 89%;
+}
+
+.drawers-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}
+
+.avatar {
+    display: block;
+    border-radius: 50%;
+    width: 15%;
+    height: auto;
+}
+
+figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+.michelle-info {
+    margin-right: 4em;
+    line-height: 1.6em;
+}
+
+.name {
+    font-size: 0.85rem;
+    color: var(--very-dark-grayish-blue);
+}
+
+.date {
+    color: var(--grayish-blue);
+}
+
+.share-icon {
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transform: translate(0%, 10%);
+    z-index: 1;
+}
+
+.icons-toggle {
+    display: none;
+}
+
+.icons-toggle.active {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    background-color: var(--very-dark-grayish-blue);
+    width: 350px;
+    bottom: 0;
+    right: 0;
+    padding: 1.5em 1.5em 0.5em 1.5em;
+    border-radius: 0 0 12px 12px;
+    transition: all 0.4s ease-in-out;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    margin-bottom: 1.5em;
+}
+
+.share-text {
+    margin-bottom: -0.5em;
+    margin-right: 0.5em;
+}
+
+
+.social-icon {
+    margin-left: 1em;
+    cursor: pointer;
+    align-items: center;
+}
+
+.icons-toggle.active p {
+    color: var(--desaturated-dark-blue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.icons-toggle.active p, .icons-toggle.active.social-icon {
+    margin-top: -0.5em;
+}
+
+footer {
+    display: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (min-width: 900px) {
+    .container {
+        flex-direction: row;
+        max-width: 750px;
+        position: unset;
+    }
+
+    article {
+        border-radius: 0 12px 12px 0;
+        width: 80%;
+        overflow: visible;
+    }
+
+    .title {
+        width: 80%;
+    }
+
+    .desc {
+        width: 100%;
+    }
+
+    .share-text {
+        margin-right: unset;
+    }
+
+    .drawers-img {
+        width: 60%;
+        border-radius: 12px 0 0 12px;
+        object-fit: cover;
+    }
+
+    .michelle-info {
+        margin-right: 10em;
+    }
+
+    .icons-toggle.active {
+        display: flex;
+        width: 220px;
+        justify-content: center;
+        padding: 1em 0.5em 0 0; 
+        border-radius: 8px;
+        right: auto;
+        bottom: auto;
+        margin-top: -10em;
+        margin-left: 19.5em;
+        overflow: visible;
+    }
+
+    .icons-toggle::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 30px solid var(--very-dark-grayish-blue);
+        top: 3em;
+        transform: translate(0%);
+        left: 6.4em;
+    }
+}
