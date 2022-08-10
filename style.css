@@ -178,6 +178,10 @@ article {
     .share-text {
         margin-right: unset;
     }
+    
+    .avatar {
+        width: 12%;
+    }
 
     .drawers-img {
         width: 60%;
