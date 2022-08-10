@@ -25,25 +25,25 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 # Mobile Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Article-Preview-Component/blob/main/Mobile%20preview.PNG)
 
 # Mobile Preview - active
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Article-Preview-Component/blob/main/Mobile%20preview%20-%20active.PNG)
 
 # Desktop Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Article-Preview-Component/blob/main/Desktop%20preview.PNG)
 
 # Desktop Preview - active
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Article-Preview-Component/blob/main/Desktop%20preview%20-%20active.PNG)
 
 
 ### Links
 
- - Source code: []()
- - Live website: []()
+ - Source code: [https://github.com/romila2003/Article-Preview-Component](https://github.com/romila2003/Article-Preview-Component)
+ - Live website: [https://article-preview-component-main.netlify.app/](https://article-preview-component-main.netlify.app/)
 
 ## My process
 
