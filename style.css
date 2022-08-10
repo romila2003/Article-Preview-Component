@@ -95,7 +95,7 @@ article {
 
 .btn {
     z-index: 100;
-    /*transform: translate(85%, -100%);*/
+    padding-top: 1em;
 }
 
 .share-icon {
@@ -152,10 +152,6 @@ article {
 
 .icons-toggle.active p, .icons-toggle.active.social-icon {
     margin-top: -0.5em;
-}
-
-footer {
-    display: none;
 }
 
 @media screen and (min-width: 900px) {
