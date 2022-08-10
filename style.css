@@ -71,18 +71,15 @@ article {
     height: auto;
 }
 
-figure {
+.figure {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-figcaption {
+.michelle-info {
     display: flex;
     flex-direction: column;
-}
-
-.michelle-info {
     margin-right: 4em;
     line-height: 1.6em;
 }
@@ -98,7 +95,7 @@ figcaption {
 
 .btn {
     z-index: 100;
-    transform: translate(0, 10%);
+    /*transform: translate(85%, -100%);*/
 }
 
 .share-icon {
